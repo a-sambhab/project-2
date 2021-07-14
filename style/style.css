@@ -1,0 +1,206 @@
+*{
+    font-weight: bold;
+    font-family: 'Big Shoulders Stencil Display';
+    margin: 0px;
+    padding: 0px;
+}
+#logo{
+    margin: 10px 10px;
+    /* height: 56px; */
+}
+#logo img{
+    height: 4rem;
+    border-radius: 60%;
+    overflow: hidden;
+    width: 4rem;
+    opacity: 0.8;
+    transition: all 0.5s ease-in-out;
+}
+#logo img:hover{
+    transform: scale(1.15);
+    opacity: 1;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#navbar ul{
+    display: flex;
+    /* justify-content: center; */
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+#navbar ul li a{
+    color: white;
+    padding: 22px 22px;
+    border-radius: 15px;
+    text-decoration:none;
+    display: block;
+    transition: all 0.5s ease-in-out;
+}
+#navbar ul li a:hover{
+    transform: scale(1.15);
+    color: rgb(26, 25, 25);
+    background-color: blanchedalmond;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url(headerback.jpeg) no-repeat center center/cover  ;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 60%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#home h1{
+    color: rgb(14, 11, 11);
+    text-align: center;
+}
+#home p{
+    color: rgb(15, 15, 14);
+    font-size: 1.8rem;
+    /* cursor: ; */
+    text-align: center;
+}
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(172, 103, 103);
+    color: white;
+    margin: 17px 17px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    transition: all 0.5s ease-in-out;
+}
+.btn:hover{
+    background-color: brown;
+    transform: scale(1.15);
+    cursor: pointer;
+}
+.center
+{
+    text-align: center;
+}
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border-radius: 22px;
+    /* border: 2px solid red; */
+    box-shadow: 5px 5px 3px grey ;
+    padding: 20px;
+    margin: 20px;
+    transition: all 0.2s ease-in-out;
+}
+#services .box:hover{
+    box-shadow: 9px 9px 4px rgb(163, 163, 163) ;
+}
+#services .box img{
+    height: 165px;
+    width: 30%;
+    margin: auto;
+    display: block;
+}
+#partnersec{
+    color: white;
+}
+#partner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#partner img{
+    height: 124px;
+    padding: 30px;
+}
+#partnersec::before{
+    content: "";
+    position: absolute;
+    background: url('https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80') no-repeat center center/cover;
+    width: 100%;
+    height: 36.5%;
+    z-index: -2;
+    margin: 1px;
+    opacity: 0.9;
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    margin: 2px;
+    background: url('https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80' ) no-repeat center center/cover;
+}
+
+#contactform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact form{
+    width: 40%;
+    font-size: 1.4rem;
+}
+
+#contactform input,
+#contactform textarea{
+    width: 100%;
+    padding:0.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+
+#submit{
+    transition: all 0.2s ease-in-out;
+}
+#submit:hover{
+    transform: scale(1.01);
+    background-color: rgb(171, 171, 231);
+}
+
+footer{
+background-color: black;
+color: white;
+padding:12px 20px;
+}

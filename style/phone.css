@@ -1,0 +1,41 @@
+p{
+    font-size: 18px;
+} 
+
+#navbar{
+    flex-direction: column;
+}
+#home{
+    padding: 50px;
+    height: 400px;
+    flex-direction: column;
+}
+#navbar ul li a{
+    font:1rem;
+    padding: 0px 7px;
+}
+#home::before{
+    height:600px;
+}
+#home p{
+    font-size: 18px;
+}
+#services{
+    flex-direction: column;
+}
+.h-primary{
+    font-size: 24px;
+}
+#partnersec::before{
+    height: 1075px;
+}
+#partner{
+    height: 950px;
+    overflow: hidden;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+ #services .box img{
+    width: 50%;
+    height: 50%;
+}
